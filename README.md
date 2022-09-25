@@ -13,3 +13,15 @@ Start time: 5:30pm 9/21/22
 Finish time: 7:20pm 9/21/22
 
 Actual time needed to complete: 1:50
+
+## Lab 03 Notes
+
+Number and name of feature: Vers.3: Model
+
+Estimate of time needed to complete: 1 Hour
+
+Start time: 4:30pm 9/24/22
+
+Finish time: 7:58pm 9/24/22
+
+Actual time needed to complete: 3:20
