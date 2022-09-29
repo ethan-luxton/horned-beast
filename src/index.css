@@ -1,4 +1,20 @@
-
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+}
+header > #hide {
+  visibility: hidden;
+}
+form > div > label {
+  color: #D9D9D9;
+}
 header, body {
   background-color:#24252A;
 }
@@ -6,9 +22,10 @@ header, body {
   width: 100%;
 }
 h1 {
-  text-align: center;
+  
   margin-bottom: 3rem;
   color: #D9D9D9;
+  float: left;
 }
 .card {
   padding: 5px;

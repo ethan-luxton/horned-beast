@@ -18,13 +18,21 @@ class App extends React.Component {
   }
   
   handleClose = () => {this.setState({show: false});}
-  handleShow = () => {this.setState({show: true});}
-  handleShow = (key) => {const selected = data.filter(x => x._id === key); this.setState({show: true}); this.setState({modal: selected[0]});}
+  handleShow = (key) => {const selected = data.filter(x => x._id === key);this.setState({show: true}); this.setState({modal: selected[0]});}
+
+  handleForm = (event) => {
+    event.preventDefault();
+    const numSelected = Number(event.target.value);
+    let filtered
+    numSelected ? filtered = data.filter(h => h.horns === numSelected) : filtered = data;
+    this.setState({display: filtered});
+  }
+
     render() {
       return (
         <>
-          <Header />
-          <Main data={data} handleShow={this.handleShow} display={this.state.display}/>
+          <Header handleForm ={this.handleForm}/>
+          <Main  handleShow={this.handleShow} display={this.state.display} />
           <SelectedBeast show={this.state.show} handleClose={this.handleClose} modal={this.state.modal}/>
           <Footer />
         </>
